@@ -1,36 +1,40 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+## [![cover][]][github]
+[![badge paypal][]][paypal account] [![badge linktree][]][linktree account] <br>
+BMKG weather forecast data client with dart.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+---
 
 ## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
 to `/example` folder. 
 
 ```dart
-const like = 'sample';
+  final results = await BMKGClient().getProvinceWeather(
+    Province.Indonesia,
+    filterParameters: [
+      FilterParameter.Weather,
+    ],
+  );
 ```
 
 ## Source
-BMKG (Badan Meteorologi, Klimatologi, dan Geofisika)
+[BMKG (Badan Meteorologi, Klimatologi, dan Geofisika)](https://data.bmkg.go.id/prakiraan-cuaca/)
+
+---
+
+### 🚧 Maintener 
+[![account avatar][]][github account] <br>
+**Farhan Fadila** <br>
+📫 How to reach me: farhan.fadila1717@gmail.com
+
+### ❤️ Suport Maintener
+[![badge paypal][]][paypal account] [![badge linktree][]][linktree account]
+
+[cover]: https://github.com/farhanfadila1717/dart-bmkg-client/blob/master/display/bmkg_client.png
+[github]: https://github.com/farhanfadila1717/dart-bmkg-client
+[account avatar]: https://avatars.githubusercontent.com/u/43161050?s=80
+[github account]: https://github.com/farhanfadila1717
+[badge linktree]: https://img.shields.io/badge/Donate-farhanfadila-orange
+[linktree account]: https://linktr.ee/farhanfadila
+[badge paypal]: https://img.shields.io/badge/Donate-PayPal-00457C?logo=paypal
+[paypal account]: https://www.paypal.me/farhanfadila1717 
